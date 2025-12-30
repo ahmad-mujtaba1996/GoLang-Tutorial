@@ -11,6 +11,7 @@ func task(id int, wg *sync.WaitGroup) {
 }
 
 func main() {
+	// Apart from Wait group, you can use channels to communicate between goroutines. Channels are used to send and receive data between goroutines. They are like pipes, where one goroutine sends data to another goroutine.
 
 	var wg sync.WaitGroup // Using wait group, we can hold main functions to wait for all goroutines to complete. It still doesn't check hierarchy as our goroutines run in parallel.
 
